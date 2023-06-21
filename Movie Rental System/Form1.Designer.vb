@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         MovieTitleTextBox = New TextBox()
-        RentalAmountTextBox = New TextBox()
+        AmountTextBox = New TextBox()
         Label1 = New Label()
         GroupBox1 = New GroupBox()
         DVDRadioBtn = New RadioButton()
@@ -46,13 +46,13 @@ Partial Class Form1
         MovieTitleTextBox.Size = New Size(278, 23)
         MovieTitleTextBox.TabIndex = 0
         ' 
-        ' RentalAmountTextBox
+        ' AmountTextBox
         ' 
-        RentalAmountTextBox.Location = New Point(111, 66)
-        RentalAmountTextBox.Name = "RentalAmountTextBox"
-        RentalAmountTextBox.ReadOnly = True
-        RentalAmountTextBox.Size = New Size(147, 23)
-        RentalAmountTextBox.TabIndex = 1
+        AmountTextBox.Location = New Point(111, 66)
+        AmountTextBox.Name = "AmountTextBox"
+        AmountTextBox.ReadOnly = True
+        AmountTextBox.Size = New Size(147, 23)
+        AmountTextBox.TabIndex = 1
         ' 
         ' Label1
         ' 
@@ -186,7 +186,7 @@ Partial Class Form1
         Controls.Add(Label2)
         Controls.Add(GroupBox1)
         Controls.Add(Label1)
-        Controls.Add(RentalAmountTextBox)
+        Controls.Add(AmountTextBox)
         Controls.Add(MovieTitleTextBox)
         Name = "Form1"
         Text = "Movie Rental System"
@@ -197,7 +197,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents MovieTitleTextBox As TextBox
-    Friend WithEvents RentalAmountTextBox As TextBox
+    Friend WithEvents AmountTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DVDRadioBtn As RadioButton
