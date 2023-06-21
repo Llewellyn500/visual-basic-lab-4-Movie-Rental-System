@@ -24,7 +24,7 @@
         End If
 
         ' Display rental amount and update the subtotal
-        AmountTextBox.Text = rentalAmount.ToString("0.00")
+        AmountTextBox.Text = "GH¢" & rentalAmount.ToString("0.00")
         totalRentalAmount += rentalAmount
     End Sub
 
