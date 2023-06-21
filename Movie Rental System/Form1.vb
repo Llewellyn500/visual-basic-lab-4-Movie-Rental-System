@@ -55,4 +55,9 @@
         ' Display the summary information
         MessageBox.Show($"Total Customers: {totalCustomers}{Environment.NewLine}Total Rental Amount: GH¢{totalRentalAmount}", "Summary")
     End Sub
+
+    Private Sub ExitBtn_Click(sender As Object, e As EventArgs) Handles ExitBtn.Click
+        ' Close the form
+        Me.Close()
+    End Sub
 End Class
