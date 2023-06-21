@@ -27,4 +27,10 @@
         AmountTextBox.Text = rentalAmount.ToString("0.00")
         totalRentalAmount += rentalAmount
     End Sub
+
+    Private Sub ClearBtn_Click(sender As Object, e As EventArgs) Handles ClearBtn.Click
+        ' Clear the New Release checkbox and rental amount textbox
+        NewReleaseCheckBox.Checked = False
+        AmountTextBox.Text = String.Empty
+    End Sub
 End Class
