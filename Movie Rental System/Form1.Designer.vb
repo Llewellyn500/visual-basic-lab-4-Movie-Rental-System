@@ -22,37 +22,37 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
+        MovieTitleTextBox = New TextBox()
+        RentalAmountTextBox = New TextBox()
         Label1 = New Label()
         GroupBox1 = New GroupBox()
+        DVDRadioBtn = New RadioButton()
+        VHSRadioBtn = New RadioButton()
         Label2 = New Label()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        CheckBox1 = New CheckBox()
-        CheckBox2 = New CheckBox()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        Button5 = New Button()
+        MemberCheckBox = New CheckBox()
+        NewReleaseCheckBox = New CheckBox()
+        CalculateBtn = New Button()
+        ClearBtn = New Button()
+        OrderCompleteBtn = New Button()
+        ExitBtn = New Button()
+        SummaryBtn = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' TextBox1
+        ' MovieTitleTextBox
         ' 
-        TextBox1.Location = New Point(111, 17)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(278, 23)
-        TextBox1.TabIndex = 0
+        MovieTitleTextBox.Location = New Point(111, 17)
+        MovieTitleTextBox.Name = "MovieTitleTextBox"
+        MovieTitleTextBox.Size = New Size(278, 23)
+        MovieTitleTextBox.TabIndex = 0
         ' 
-        ' TextBox2
+        ' RentalAmountTextBox
         ' 
-        TextBox2.Location = New Point(111, 66)
-        TextBox2.Name = "TextBox2"
-        TextBox2.ReadOnly = True
-        TextBox2.Size = New Size(147, 23)
-        TextBox2.TabIndex = 1
+        RentalAmountTextBox.Location = New Point(111, 66)
+        RentalAmountTextBox.Name = "RentalAmountTextBox"
+        RentalAmountTextBox.ReadOnly = True
+        RentalAmountTextBox.Size = New Size(147, 23)
+        RentalAmountTextBox.TabIndex = 1
         ' 
         ' Label1
         ' 
@@ -65,14 +65,36 @@ Partial Class Form1
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(RadioButton2)
-        GroupBox1.Controls.Add(RadioButton1)
+        GroupBox1.Controls.Add(DVDRadioBtn)
+        GroupBox1.Controls.Add(VHSRadioBtn)
         GroupBox1.Location = New Point(404, 17)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(98, 76)
         GroupBox1.TabIndex = 3
         GroupBox1.TabStop = False
         GroupBox1.Text = "Movie Format"
+        ' 
+        ' DVDRadioBtn
+        ' 
+        DVDRadioBtn.AutoSize = True
+        DVDRadioBtn.Location = New Point(16, 47)
+        DVDRadioBtn.Name = "DVDRadioBtn"
+        DVDRadioBtn.Size = New Size(48, 19)
+        DVDRadioBtn.TabIndex = 1
+        DVDRadioBtn.TabStop = True
+        DVDRadioBtn.Text = "DVD"
+        DVDRadioBtn.UseVisualStyleBackColor = True
+        ' 
+        ' VHSRadioBtn
+        ' 
+        VHSRadioBtn.AutoSize = True
+        VHSRadioBtn.Location = New Point(16, 22)
+        VHSRadioBtn.Name = "VHSRadioBtn"
+        VHSRadioBtn.Size = New Size(47, 19)
+        VHSRadioBtn.TabIndex = 0
+        VHSRadioBtn.TabStop = True
+        VHSRadioBtn.Text = "VHS"
+        VHSRadioBtn.UseVisualStyleBackColor = True
         ' 
         ' Label2
         ' 
@@ -83,110 +105,89 @@ Partial Class Form1
         Label2.TabIndex = 4
         Label2.Text = "Rental Amount:"
         ' 
-        ' RadioButton1
+        ' MemberCheckBox
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(16, 22)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(47, 19)
-        RadioButton1.TabIndex = 0
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "VHS"
-        RadioButton1.UseVisualStyleBackColor = True
+        MemberCheckBox.AutoSize = True
+        MemberCheckBox.Location = New Point(523, 39)
+        MemberCheckBox.Name = "MemberCheckBox"
+        MemberCheckBox.Size = New Size(71, 19)
+        MemberCheckBox.TabIndex = 5
+        MemberCheckBox.Text = "Member"
+        MemberCheckBox.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton2
+        ' NewReleaseCheckBox
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(16, 47)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(48, 19)
-        RadioButton2.TabIndex = 1
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "DVD"
-        RadioButton2.UseVisualStyleBackColor = True
+        NewReleaseCheckBox.AutoSize = True
+        NewReleaseCheckBox.Location = New Point(523, 65)
+        NewReleaseCheckBox.Name = "NewReleaseCheckBox"
+        NewReleaseCheckBox.Size = New Size(92, 19)
+        NewReleaseCheckBox.TabIndex = 6
+        NewReleaseCheckBox.Text = "New Release"
+        NewReleaseCheckBox.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox1
+        ' CalculateBtn
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(523, 39)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(71, 19)
-        CheckBox1.TabIndex = 5
-        CheckBox1.Text = "Member"
-        CheckBox1.UseVisualStyleBackColor = True
+        CalculateBtn.Location = New Point(12, 126)
+        CalculateBtn.Name = "CalculateBtn"
+        CalculateBtn.Size = New Size(138, 48)
+        CalculateBtn.TabIndex = 7
+        CalculateBtn.Text = "Calculate"
+        CalculateBtn.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox2
+        ' ClearBtn
         ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.Location = New Point(523, 65)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(92, 19)
-        CheckBox2.TabIndex = 6
-        CheckBox2.Text = "New Release"
-        CheckBox2.UseVisualStyleBackColor = True
+        ClearBtn.Location = New Point(170, 126)
+        ClearBtn.Name = "ClearBtn"
+        ClearBtn.Size = New Size(138, 48)
+        ClearBtn.TabIndex = 8
+        ClearBtn.Text = "Clear"
+        ClearBtn.UseVisualStyleBackColor = True
         ' 
-        ' Button1
+        ' OrderCompleteBtn
         ' 
-        Button1.Location = New Point(12, 126)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(138, 48)
-        Button1.TabIndex = 7
-        Button1.Text = "Calculate"
-        Button1.UseVisualStyleBackColor = True
+        OrderCompleteBtn.Location = New Point(329, 126)
+        OrderCompleteBtn.Name = "OrderCompleteBtn"
+        OrderCompleteBtn.Size = New Size(138, 48)
+        OrderCompleteBtn.TabIndex = 9
+        OrderCompleteBtn.Text = "Order Complete"
+        OrderCompleteBtn.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' ExitBtn
         ' 
-        Button2.Location = New Point(170, 126)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(138, 48)
-        Button2.TabIndex = 8
-        Button2.Text = "Clear"
-        Button2.UseVisualStyleBackColor = True
+        ExitBtn.BackColor = SystemColors.ControlLightLight
+        ExitBtn.Location = New Point(146, 194)
+        ExitBtn.Name = "ExitBtn"
+        ExitBtn.Size = New Size(344, 54)
+        ExitBtn.TabIndex = 10
+        ExitBtn.Text = "Exit"
+        ExitBtn.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' SummaryBtn
         ' 
-        Button3.Location = New Point(329, 126)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(138, 48)
-        Button3.TabIndex = 9
-        Button3.Text = "Order Complete"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' Button4
-        ' 
-        Button4.Location = New Point(146, 194)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(344, 54)
-        Button4.TabIndex = 10
-        Button4.Text = "Exit"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' Button5
-        ' 
-        Button5.Location = New Point(477, 126)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(138, 48)
-        Button5.TabIndex = 11
-        Button5.Text = "Summary"
-        Button5.UseVisualStyleBackColor = True
+        SummaryBtn.Location = New Point(477, 126)
+        SummaryBtn.Name = "SummaryBtn"
+        SummaryBtn.Size = New Size(138, 48)
+        SummaryBtn.TabIndex = 11
+        SummaryBtn.Text = "Summary"
+        SummaryBtn.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(643, 276)
-        Controls.Add(Button5)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(CheckBox2)
-        Controls.Add(CheckBox1)
+        Controls.Add(SummaryBtn)
+        Controls.Add(ExitBtn)
+        Controls.Add(OrderCompleteBtn)
+        Controls.Add(ClearBtn)
+        Controls.Add(CalculateBtn)
+        Controls.Add(NewReleaseCheckBox)
+        Controls.Add(MemberCheckBox)
         Controls.Add(Label2)
         Controls.Add(GroupBox1)
         Controls.Add(Label1)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(RentalAmountTextBox)
+        Controls.Add(MovieTitleTextBox)
         Name = "Form1"
         Text = "Movie Rental System"
         GroupBox1.ResumeLayout(False)
@@ -195,18 +196,18 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents MovieTitleTextBox As TextBox
+    Friend WithEvents RentalAmountTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents DVDRadioBtn As RadioButton
+    Friend WithEvents VHSRadioBtn As RadioButton
     Friend WithEvents Label2 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents MemberCheckBox As CheckBox
+    Friend WithEvents NewReleaseCheckBox As CheckBox
+    Friend WithEvents CalculateBtn As Button
+    Friend WithEvents ClearBtn As Button
+    Friend WithEvents OrderCompleteBtn As Button
+    Friend WithEvents ExitBtn As Button
+    Friend WithEvents SummaryBtn As Button
 End Class
