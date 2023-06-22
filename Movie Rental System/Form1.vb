@@ -18,9 +18,12 @@
             rentalAmount = If(NewReleaseCheckBox.Checked, 12, 10)
         End If
 
+        ' Declearing a variable to store the member discount
+        Dim memberDiscount As Decimal = 0.1
+
         ' Apply discount for members
         If MemberCheckBox.Checked Then
-            rentalAmount -= rentalAmount * 0.1
+            rentalAmount -= rentalAmount * memberDiscount
         End If
 
         ' Display rental amount and update the subtotal
